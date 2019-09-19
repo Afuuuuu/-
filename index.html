@@ -6,9 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Parallax Website</title>
     <link rel="stylesheet" href="../-/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+
 <body>
-   
+    <header>
+       <div class="toggle"></div>
+        <nav>
+           <div class="icons">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="twittwe"><i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="ins"><i class="fab fa-instagram"></i></a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Photo</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
     <div class="pimg1">
         <div class="ptext">
             <span class="border">
@@ -16,38 +38,38 @@
             </span>
         </div>
     </div>
-    
+
     <section class="section section-light">
         <h2>Section One</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque suscipit esse libero minus, officia quo nobis rerum a laborum dolor nam, ipsa iste temporibus quaerat consequatur reprehenderit laboriosam sapiente nostrum, fugiat voluptate. Ratione ad fugit harum mollitia eligendi ipsum iste soluta, error nesciunt consectetur? Nostrum inventore amet quaerat iusto fugit quis, fugiat labore. Quo, harum architecto eligendi fugit incidunt laborum consequuntur nisi minus eveniet eius sit voluptates dolorum excepturi in beatae libero, aliquam rem nam obcaecati veniam non voluptatum fuga quis quibusdam. Tempore maxime qui ab, cumque, culpa repellendus architecto id quis fuga, iure sit? Blanditiis tempora expedita adipisci similique.</p>
     </section>
-    
+
     <div class="pimg2">
         <div class="ptext">
             <span class="border trans">
-                 Image Two Text
+                Image Two Text
             </span>
         </div>
     </div>
-    
+
     <section class="section section-dark">
         <h2>Section Two</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque suscipit esse libero minus, officia quo nobis rerum a laborum dolor nam, ipsa iste temporibus quaerat consequatur reprehenderit laboriosam sapiente nostrum, fugiat voluptate. Ratione ad fugit harum mollitia eligendi ipsum iste soluta, error nesciunt consectetur? </p>
     </section>
-    
+
     <div class="pimg3">
         <div class="ptext">
             <span class="border trans">
-                 Image three Text
+                Image three Text
             </span>
         </div>
     </div>
-    
+
     <section class="section section-dark">
         <h2>Section Three</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque suscipit esse libero minus, officia quo nobis rerum a laborum dolor nam, ipsa iste temporibus quaerat consequatur reprehenderit laboriosam sapiente nostrum, fugiat voluptate. Ratione ad fugit harum mollitia eligendi ipsum iste soluta, error nesciunt consectetur? </p>
     </section>
-    
+
     <div class="pimg1">
         <div class="ptext">
             <span class="border">
@@ -55,5 +77,12 @@
             </span>
         </div>
     </div>
-</body>
-</html>
+    <script>
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav li').toggleClass('active')
+            })
+        })
+    </script>
+</body></html>
