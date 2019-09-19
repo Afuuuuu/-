@@ -147,7 +147,50 @@ nav ul li:hover{
 .ptext .border.trans{
     background-color: transparent;
 }
-
+@media(max-width:375px){
+    .ptext{
+        font-size:15px;
+    }
+    nav{
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    nav ul{
+        display: block;
+        text-align: center;
+    }
+    .toggle{
+        position: absolute;
+        top: 21px;
+        left: 10px;
+        z-index: 5;
+        
+    }
+    .toggle:before{
+        content: '\f0c9';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 25px;
+    }
+    .toggle.active:before{
+        content: '\f00d';
+        font-size: 25px;
+    }
+    
+    nav li{
+        display: none;
+    }
+    nav li.active{
+        display: block;
+    }
+    
+    nav li:hover {
+        background: #7f8fa6;
+    }
+    
+}
 @media(max-width:320px){
     .ptext{
         font-size:15px;
